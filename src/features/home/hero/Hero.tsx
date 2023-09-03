@@ -64,7 +64,7 @@ export default function Hero() {
           </button>
         </div>
       </div>
-      <div className="max-w-lg bg-gray-200 rounded-lg flex flex-col p-1 w-full mx-auto mt-10">
+      <div className="max-w-2xl h-[800px] max-h-[70vh] bg-gray-200 rounded-lg flex flex-col p-1 w-full mx-auto mt-10">
         <div className="grid grid-cols-4 p-2 justify-between items-center group">
           <div className="flex gap-1">
             <div className="h-2 w-2 rounded-lg bg-gray-500 group-hover:bg-red-500"></div>
@@ -81,7 +81,7 @@ export default function Hero() {
             <FontAwesomeIcon icon={faShare} />
           </div>
         </div>
-        <div className="bg-white rounded-lg overflow-hidden">
+        <div className="bg-white rounded-lg overflow-hidden h-full">
           <AnimatePresence>
             {currFocus === "research" && <Research />}
             {currFocus === "plan" && <Plan />}

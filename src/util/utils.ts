@@ -7,3 +7,7 @@ export const randomIntFromInterval = (min: number, max: number) => {
 export const wait = (ms: number) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
+
+export const deepCopy = <T>(obj: T): T => {
+  return JSON.parse(JSON.stringify(obj));
+}

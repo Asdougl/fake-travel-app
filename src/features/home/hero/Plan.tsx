@@ -27,8 +27,8 @@ export default function Plan() {
   useEffect(() => {
     const doAnimate = async () => {
       await wait(800);
-      await buttonAnimation.start({ scale: 1.2 });
       await buttonAnimation.start({ scale: 1 });
+      await buttonAnimation.start({ scale: 0.9 });
       await wait(100);
 
       await Promise.all([
@@ -196,7 +196,7 @@ export default function Plan() {
         <motion.div
           animate={buttonAnimation}
           style={{ borderRadius: "9999px" }}
-          className="bg-emerald-200 py-1"
+          className="bg-emerald-200 py-1 h-8"
           layoutId="new-entry-button"
         >
           <motion.span animate={iconAnimation} className="px-4">
